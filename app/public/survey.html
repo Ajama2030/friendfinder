@@ -2,115 +2,289 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Reservation Page</title>
+  <title>FriendFinder</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ 
 
 </head>
 <body>
 
   <div class="container">
-
-    
     <div class="row">
       <div class="col-lg-12">
 
-        <!-- Reservation Page -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">Table Reservation</h4>
-          </div>
+       <h2>Survey Questions</h2>
+       <h3><strong>About You</strong></h3>
+       
           <div class="panel-body">
 
             <form role="form">
 
               <div class="form-group">
-                <label for="reserve-name">Name</label>
+                <label for="reserve-name"><h4>Name (Required)</h4></label>
                 <input type="text" class="form-control" id="reserve-name">
               </div>
 
               <div class="form-group">
-                <label for="reserve-phone">Phone Number</label>
-                <input type="text" class="form-control" id="reserve-phone">
+                <label for="reserve-name"><h4>Link to Photo Image (Required)</h4></label>
+                <input type="text" class="form-control" id="reserve-image">
               </div>
-
-              <div class="form-group">
-                <label for="reserve-email">Email</label>
-                <input type="text" class="form-control" id="reserve-email">
-              </div>
-
-              <div class="form-group">
-                <label for="reserve-unique-id">Unique ID</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
-              </div>
-
-              <button type="submit" class="btn btn-primary submit">Submit</button>
             </form>
-
           </div>
-        </div>
-
       </div>
     </div>
+        <h3><strong>Question 1</strong></h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
 
-     <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friendfinder">API Friends List</a>  |<a href="https://github.com/Ajama2030/friendfinder">GitHub Repo</a></p>
-      </div>
+        <h3><strong>Question 2</strong></h3>
+        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
+
+        <h3><strong>Question 3</strong></h3>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>People can rarely upset you.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
+
+        <h3><strong>Question 6</strong></h3>
+        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
+
+        <h3><strong>Question 7</strong></h3>
+        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
+
+        <h3><strong>Question 8</strong></h3>
+        <h4>You rarely get carried away by fantasies and ideas.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
+
+        <h3><strong>Question 9</strong></h3>
+        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="qestion9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+                
+              </ul>
+        </div>
+
+        <h3><strong>Question 10</strong></h3>
+        <h4>You feel more energetic after spending time with a group of people.</h4>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id=qestion10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Select an option
+                <span class="caret"></span>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">1 (Strongly Disagree)</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5 (Strongly Agree) </a></li>
+              </ul>
+        </div>
+
+       
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><span class="glyphicon glyphicon-ok"></span><i class="fa fa-check-circle" aria-hidden="true"></i>
+          Submit
+        </button>
+
+  
+
+    <footer class="footer">
+        <div class="container">
+          <p><a href="/api/friendfinder">API Friends List</a>  |<a href="https://github.com/Ajama2030/friendfinder">GitHub Repo</a></p>
+        </div>
     </footer>
+
   </div>
 
+
+  
 </body>
 </html>
 
-<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+
 <script type="text/javascript">
 
-    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+ 
 
-    $(".submit").on("click", function(event) {
+    $("#submit").on("click", function(event) {
       event.preventDefault();
 
-      // Here we grab the form elements
-      var newReservation = {
-        customerName: $("#reserve-name").val().trim(),
-        phoneNumber: $("#reserve-phone").val().trim(),
-        customerEmail: $("#reserve-email").val().trim(),
-        customerID: $("#reserve-unique-id").val().trim()
+      
+      var aboutYou = {
+        friendName: $("#reserve-name").val().trim(),
+        PhotoImage: $("#reserve-image").val().trim(),
+       
+      };
+      console.log(aboutYou);
+
+      var questions = {
+        friendName: $("#reserve-name").val().trim(),
+        PhotoImage: $("#reserve-image").val().trim(),
+       
       };
 
-      console.log(newReservation);
+       console.log(questions);
 
-      // This line is the magic. It"s very similar to the standard ajax function we used.
-      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-      // depending on if a tables is available or not.
-
-      $.post("/api/tables", newReservation,
+      // ========================================
+      $.post("/api/friends", aboutYou,
         function(data) {
-
-          // If a table is available... tell user they are booked.
           if (data) {
-            alert("Yay! You are officially booked!");
+            alert("who is my friend!");
           }
 
-          // If a table is available... tell user they on the waiting list.
           else {
-            alert("Sorry you are on the wait list");
+            alert("Sorry you have no friend");
           }
 
-          // Clear the form when submitting
-          $("#reserve-name").val("");
-          $("#reserve-phone").val("");
-          $("#reserve-email").val("");
-          $("#reserve-unique-id").val("");
+
+      $.post("/api/friends", questions,
+        function(data) {
+          if (data) {
+            alert("who is my friend!");
+          }
+
+          else {
+            alert("Sorry you have no friend");
+          }
+
+          
 
         });
 
