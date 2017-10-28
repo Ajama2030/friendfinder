@@ -27,12 +27,12 @@
 
               <div class="form-group">
                 <label for="reserve-name"><h4>Name (Required)</h4></label>
-                <input type="text" class="form-control" id="reserve-name">
+                <input type="text" class="form-control" id="name">
               </div>
 
               <div class="form-group">
                 <label for="reserve-name"><h4>Link to Photo Image (Required)</h4></label>
-                <input type="text" class="form-control" id="reserve-image">
+                <input type="text" class="form-control" id="image">
               </div>
             </form>
           </div>
@@ -243,50 +243,50 @@
 
  
 
-    $("#submit").on("click", function(event) {
-      event.preventDefault();
-
+    $("#submit" ).on("click", function() {
+    
+      var InfoEntry;
+      if($("#name").val().trim() === ''){
+      alert('Please Enter Your Name');
+      }
+        else if($("#image").val().trim() === ''){
+        alert('Please Enter A Link To Photo');
+      }
+      else{
+      var answerArray = [];
+      for(i=1; i<11; i++){
+        answerArray.push(parseInt($('#quest' + i).val().substring(0,1)));
+      }
       
-      var aboutYou = {
-        friendName: $("#reserve-name").val().trim(),
-        PhotoImage: $("#reserve-image").val().trim(),
-       
+      var aboutYou = 
+      {
+        friendName: $("#name").val().trim(),
+        PhotoImage: $("#image").val().trim(),
+        scores: answerArray
       };
       console.log(aboutYou);
 
-      var questions = {
-        friendName: $("#reserve-name").val().trim(),
-        PhotoImage: $("#reserve-image").val().trim(),
-       
-      };
+      var URL = window.location.origin;
 
-       console.log(questions);
+       $.post(URL + "/api/friends", aboutYou,
 
-      // ========================================
-      $.post("/api/friends", aboutYou,
-        function(data) {
-          if (data) {
-            alert("who is my friend!");
-          }
-
-          else {
-            alert("Sorry you have no friend");
-          }
-
-
-      $.post("/api/friends", questions,
-        function(data) {
-          if (data) {
-            alert("who is my friend!");
-          }
-
-          else {
-            alert("Sorry you have no friend");
-          }
-
+       function(data){});
+      
+      $.ajax({url: URL + "/api/friends", method: "GET"}).done(function(res){
           
+        var bestFriend;
+        var currentBest = 50;
+        var differenceArray = [];
+        
+        for(i=0; i < res.length - 1; i++){
+          
+          for(j=0; j<10; j++){
+            var currentDifference = newFriend.scores[j] - res[i].scores[j];
+            differenceArray.push(Math.abs(currentDifference));
+          }
+     
 
-        });
+        };
 
     });
 
