@@ -7,7 +7,7 @@ var path = require('path');
 var app = express();
 
 // =================================================
-var PORT = process.env.PORT || 8080;
+var PORT = 3000;
 
 // ================================================
 app.use(bodyParser.json());

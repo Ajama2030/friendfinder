@@ -1,6 +1,6 @@
 // ===============================================================================
 
-var friendFinder = require("../data/friends");
+var friends = require("../data/friends");
 var path = require('path');
 
 // ROUTING
@@ -9,13 +9,11 @@ var path = require('path');
 module.exports = function(app) {
   // API GET Requests
   
-  app.get("/api/friends", function(req, res) {
-    res.json(friendFinder);
+  app.get("/api/survey", function(req, res) {
+    res.json(friends);
   });
-
-  // API POST Requests
-  
-  app.post("/api/friends", function(req, res) {
+  //==================================================================
+  app.post("/api/survey", function(req, res) {
     
       friends.push(req.body);
   
@@ -25,10 +23,8 @@ module.exports = function(app) {
   //
 
   app.post("/api/clear", function() {
-    
-    friends = [];
-    
 
+    friends = [];
     console.log(friends);
   });
 };

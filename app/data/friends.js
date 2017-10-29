@@ -1,11 +1,7 @@
 // ===============================================================================
 // DATA
-// Below data will hold all of the reserved tables.
-// Initially we just set it equal to a "dummy" customer.
-// But you could have it be an empty array as well.
-// ===============================================================================
 
-var tableArray = [
+var friends = [
   	{
     	name: 'Will Smith',
 		photo: 'https://www.google.com/search?q=will+smith+images&tbm=isch&source=iu&pf=m&ictx=1&fir=s7STQOJehllF8M%253A%252Ctu4wcnI8CYP8IM%252C_&usg=__nLJOgFMydriroutNPCGiRrCmZjc%3D&sa=X&ved=0ahUKEwipqIifz5PXAhXnlVQKHeWyAp8Q9QEILDAB#imgrc=s7STQOJehllF8M',
@@ -25,6 +21,4 @@ var tableArray = [
 	}];
 		
 
-
-// Note how we export the array. This makes it accessible to other files using require.
-module.exports = tableArray;
+module.exports = friends;
